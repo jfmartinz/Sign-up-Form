@@ -19,7 +19,6 @@
 <body>
 
     <section class="hero">
-        <main id="sm-screen-size">
 
             <section class="left">
                 <div class="img-container">
@@ -30,24 +29,58 @@
 
             <section class="right">
                 <header class="header-texts">
-                        <p>This is not a real online service! You know you need something
-                            like this in your life to help you realize your deepest dreams.
-                            Sign up <i>now</i> to get started.</p>
+                    <p>This is not a real online service! You know you need something
+                        like this in your life to help you realize your deepest dreams.
+                        Sign up <i>now</i> to get started.</p>
 
-                            <p>You <i>know</i> you want to.</p>
+                    <p>You <i>know</i> you want to.</p>
                 </header>
 
                 <section class="form-container">
                     <h2>Let's do this!</h2>
+                    <form class="form" action="#">
+                        <div>
+                            <label for="first-name" name="first-name">first name</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div>
+                            <label for="last-name" name="last-name">last name</label>
+                            <input type="text" id="last-name" required>
+                        </div>
 
-                    <form action="#" method="post">
-                        
+                        <div>
+                            <label for="email" name="user-email">email</label>
+                            <input type="email" id="email">
 
-                    </form>
+                        </div>
+
+                        <div>
+                            <label for="tel" name="user-tel">telephone</label>
+                            <input type="tel" id="tel" required>
+
+                        </div>
+
+                        <div>
+                            <label for="pass" name="user-pass">password</label>
+                            <input type="password" id="pass" required>
+                        </div>
+
+                        <div>
+                            <label for="confirm-pass" name="confirm-pass">confirm password</label>
+                            <input type="password" id="confirm-pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="setCustomValidity('Passwords must be at least 8 characters long and contain at least one digit, one lowercase letter, and one uppercase letter.')" oninput="setCustomValidity('')">
+                        </div>
+
                 </section>
+
+
+                <div class="button-container">
+                    <button type="submit">create account</button>
+                    <p>Already have an account? Log in</p>
+                </div>
+
+                </form>
             </section>
 
-        </main>
     </section>
 
 
