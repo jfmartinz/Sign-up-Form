@@ -24,7 +24,7 @@ html{
 
 .left{
     width: 35%;
-    height: 100vh;
+    min-height: 100vh;
     background: url(img/halie-west.jpg) no-repeat center;
     background-size: cover;
     position: relative;
@@ -154,6 +154,38 @@ box-shadow: 2px 2px 4px #888888;
     font-size: 1.3rem;
 }
 
+
+
+
+@media only screen and (max-width: 800px) {
+    .left {
+      width: 100%;
+      min-height: 20vh;
+      margin-right: 0;
+      float: none;
+    }
+
+    .img-container{
+        padding: 1rem 0;
+       
+    }
+    .img-container img{
+        width: 50px;
+        height: 65px;
+        margin-right: 1rem;
+    }
+    .right .header-texts{
+        padding: 3rem 0 0 2rem;
+    }
+    .form-container .form{
+        grid-template-columns: 220px 220px;
+    }
+
+    .button-container{
+        margin-left: 2rem;
+    }
+
+  }
 
 
 
